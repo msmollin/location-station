@@ -1,0 +1,13 @@
+{
+  "name": "LocationStation",
+  "version": "0.0.1",
+  "description": "A Node.js application for making a bluetooth low energy GPS devices",
+  "main": "index.js",
+  "engines": {
+    "node": ">=5.0.0"
+  },
+  "dependencies": {
+    "bleno": "~0.3.5",
+    "node-gpsd": "~0.2.5"
+  }
+}
