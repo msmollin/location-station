@@ -24,7 +24,7 @@ LocationLongitudeCharacteristic.prototype.onReadRequest = function(offset, callb
     callback(this.RESULT_ATTR_NOT_LONG, null);
   }
   else {
-      console.log("Sending longitude - " + JSON.stringify(this.locationStation.longitude));
+      console.log("LocationLongitudeCharacteristic - onReadRequest: longitude - " + JSON.stringify(this.locationStation.longitude));
     var data = new Buffer(8);
     data.writeDoubleBE(this.locationStation.longitude, 0);
     callback(this.RESULT_SUCCESS, data);
